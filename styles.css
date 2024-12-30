@@ -1,0 +1,108 @@
+/* styles.css */
+
+/* Réinitialisation pour mobiles */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+/* Navigation */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    background-color: #0D0D0D;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1em;
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #32CD32;
+}
+
+/* Section principale */
+.hero-section {
+    text-align: center;
+    padding: 2em;
+    color: #ffffff;
+    background: linear-gradient(135deg, #1E90FF, #32CD32);
+}
+
+.hero-content h1 {
+    font-size: 2em;
+}
+
+.hero-content .btn {
+    margin-top: 1em;
+    padding: 0.5em 1em;
+    font-size: 1em;
+    color: #ffffff;
+    background: #0D0D0D;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.hero-content .btn:hover {
+    background: #32CD32;
+}
+
+/* Sections responsives */
+section {
+    padding: 2em 1em;
+    margin: 1em 0;
+}
+
+/* Grille pour projets */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1em;
+}
+
+.project-card img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.project-card h3 {
+    margin-top: 0.5em;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 1em;
+    background: #0D0D0D;
+    color: #ffffff;
+}
+
+/* Mobile-specific tweaks */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 1.5em;
+    }
+
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 0.5em;
+    }
+}
