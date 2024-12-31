@@ -88,22 +88,32 @@
         <p>© 2024 Ichola Brice AKIOSSI. Tous droits réservés.</p>
     </footer>
 
-    <script>
-        const nameElement = document.getElementById('name');
-        const nameText = "Ichola Brice AKIOSSI";
-        let index = 0;
+<script>
+    const nameElement = document.getElementById('name');
+    const greetingElement = document.querySelector('.hero-content h1');
 
-        function typeEffect() {
-            if (index < nameText.length) {
-                nameElement.textContent += nameText[index];
-                index++;
-                setTimeout(typeEffect, 300); // Ajustez la vitesse ici (en ms)
-            }
+    const nameText = "Ichola Brice AKIOSSI";
+    let index = 0;
+
+    function typeEffect() {
+        if (index < nameText.length) {
+            nameElement.textContent += nameText[index];
+            index++;
+            setTimeout(typeEffect, 300); // Ajustez la vitesse ici (en ms)
         }
+    }
 
-        // Lance l'effet après le chargement de la page
-        window.onload = typeEffect;
-    </script>
+    function setGreeting() {
+        const hour = new Date().getHours();
+        const greeting = hour < 18 ? "Bonjour" : "Bonsoir";
+        greetingElement.innerHTML = `${greeting}, je suis <span id="name" class="highlight"></span>`;
+        typeEffect();
+    }
+
+    // Appelle les fonctions après le chargement de la page
+    window.onload = setGreeting;
+</script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
