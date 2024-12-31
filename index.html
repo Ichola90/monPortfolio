@@ -6,6 +6,7 @@
     <title>Portfolio | Ichola Brice AKIOSSI</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
@@ -13,7 +14,7 @@
     <header class="hero-section">
         <nav class="navbar navbar-dark bg-dark fixed-top">
             <div class="container-fluid">
-                <a href="#home" class="logo"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 500 500">
+                <a href="#home" class="logo"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 500 500">
                     <rect width="500" height="500" fill="#0D0D0D" />
                     <text x="50%" y="40%" text-anchor="middle" font-family="Arial, sans-serif" font-weight="bold" font-size="80" fill="#1E90FF">
                         NICE
@@ -25,36 +26,32 @@
                     <path d="M 150 350 L 250 150 L 350 350 Z" fill="#32CD32" />
                 </svg>
                 </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
-              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+              <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
                 <div class="offcanvas-header">
-                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">NICEKIDO'S TECH</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">NICEKIDO'S TECH</h5>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
                   <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                     <li class="nav-item dropdown">
                       <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Menu
+                       Menu
                       </a>
-                      <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#about">Propos</a></li>
-                        <li><a class="dropdown-item" href="#projects">Projets</a></li>
-                        <li>
-                          <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="#contact">Contact</a></li>
-                      </ul>
-                    </li>
-                  </ul>
+                     <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#about"><i class="fa fa-user"></i> À Propos</a></li>
+                        <li><a class="dropdown-item" href="#projects"><i class="fa fa-code"></i> Projets</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#contact"><i class="fa fa-envelope"></i> Contact</a></li>
+                    </ul>
                 </div>
               </div>
             </div>
           </nav>
         <div class="hero-content">
-            <h1>Bonjour, je suis <span id="name" class="highlight"></span></h1>
+            <h1>Bonjour, je suis <span id="" class="highlight">Ichola Brice AKIOSSI</span></h1>
             <p>Développeur Web | Spécialiste Frontend & Backend | Créateur d'expériences numériques.</p>
             <a href="#projects" class="btn">Voir mes projets</a>
         </div>
@@ -87,33 +84,7 @@
     <footer class="footer">
         <p>© 2024 Ichola Brice AKIOSSI. Tous droits réservés.</p>
     </footer>
-
-<script>
-    const nameElement = document.getElementById('name');
-    const greetingElement = document.querySelector('.hero-content h1');
-
-    const nameText = "Ichola Brice AKIOSSI";
-    let index = 0;
-
-    function typeEffect() {
-        if (index < nameText.length) {
-            nameElement.textContent += nameText[index];
-            index++;
-            setTimeout(typeEffect, 300); // Ajustez la vitesse ici (en ms)
-        }
-    }
-
-    function setGreeting() {
-        const hour = new Date().getHours();
-        const greeting = hour < 18 ? "Bonjour" : "Bonsoir";
-        greetingElement.innerHTML = `${greeting}, je suis <span id="name" class="highlight"></span>`;
-        typeEffect();
-    }
-
-    // Appelle les fonctions après le chargement de la page
-    window.onload = setGreeting;
-</script>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
 </body>
 </html>
