@@ -3,144 +3,462 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Ichola Brice AKIOSSI</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-</head>
-<body class="container-fluid">
-<nav class="navbar bg-body-tertiary fixed-top">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">  <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 500 500">
-      <text x="50%" y="40%" text-anchor="middle" font-family="Arial, sans-serif" font-weight="bold" font-size="80" fill="#1E90FF">
-          NICE
-      </text>
-      <text x="50%" y="60%" text-anchor="middle" font-family="Arial, sans-serif" font-weight="bold" font-size="80" fill="#32CD32">
-          KIDO
-      </text>
-      <circle cx="250" cy="250" r="220" stroke="#1E90FF" stroke-width="10" fill="none" />
-      <path d="M 150 350 L 250 150 L 350 350 Z" fill="#32CD32" />
-  </svg></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-      </div>
-      <div class="offcanvas-body">
-        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-          <li class="nav-item">
-            <b class="active text-secondary mb-1">Accueil</b>
-          </li>
-            <li class="nav-item">
-            <a class="nav-link active text-dark mb-1" aria-current="page" href="#about">À Propos</a>
-          </li>
-              <li class="nav-item">
-            <a class="nav-link active text-dark mb-1" aria-current="page" href="#projects">Projets</a>
-          </li>
-            <li class="nav-item">
-            <a class="nav-link active text-dark mb-1" aria-current="page" href="#contact">Contacts</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</nav>
-      <div class=" mt-5">
-        <div class="hero-content mt-5">
-            <h1>Bonjour, je suis <span id="" class="highlight">Ichola Brice AKIOSSI</span></h1>
-            <p>Développeur Web | Spécialiste Frontend & Backend | Créateur d'expériences numériques.</p>
-            <a href="#projects" class="btn">Voir mes projets</a>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.6.0/fonts/remixicon.css" rel="stylesheet">
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <link rel="icon" href="logo1.svg" type="image/x-icon">
+    <!--herder of the website-->
+    <script type="text/javascript">
+      (function(){
+        emailjs.init("15yGnWMPrDyI-ymSP6apH");
+      })();
+    </script>
+    <title>ICHTECH || Portfolio</title>
+<body>
+    <header>
+        <div class="logo">
+            <a href="#home">
+                <img  src="logo1.svg" alt="">
+            </a>
+     
         </div>
-         </div>
-    </header>
-    <main>
-        <section id="about" class="about-section">
-            <h2>À Propos</h2>
-            <p>Je suis un développeur passionné avec 2 années d'expérience en création de sites web modernes et performants. Mon objectif est de transformer vos idées en réalité numérique.</p>
-        </section>
-        <section id="skills" class="skills-section">
-    <h2>Mes Compétences</h2>
-    <div class="skills-grid">
-        <!-- Ajout des compétences sous forme de cartes ou de barres de progression -->
-        <div class="skill-card">
-            <h3>Frontend</h3>
-            <ul>
-                <li>HTML5, CSS3</li>
-                <li>JavaScript (ES6+)</li>
-                <li>Jquery</li>
-            </ul>
-        </div>
-        <div class="skill-card">
-            <h3>Backend</h3>
-            <ul>
-                <li>PHP, Symfony</li>
-                <li>Laravel</li>
-                <li>MySQL, MongoDB</li>
-            </ul>
-        </div>
-        <div class="skill-card">
-            <h3>Outils & Méthodologies</h3>
-            <ul>
-                <li>Git, GitHub</li>
-               <!-- <li>Docker, CI/CD</li>-->
+        <div class="nav_menu">
+            <ul class="nav_list">
+                
+            <li><a href="#home" class="active">HOME</a></li>
+                <li><a href="#about">A PROPOS</a></li>
+                <li><a href="#services">SERVICES</a></li>
+                <li><a href="#skill">COMPETENCES</a></li>
+               <li><a href="#portfolio">PORTFOLIO</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+     
+                
                 
             </ul>
         </div>
-        <div class="skill-card">
-            <h3>Soft Skills</h3>
-            <ul>
-                <li>Résolution de problèmes</li>
-                <li>Travail en équipe</li>
-                <li>Gestion du temps</li>
-            </ul>
-        </div>
-      </div>
-            <div class="cv-section">
-        <h3>Téléchargez mon CV</h3>
-        <p>Pour une vue détaillée de mes expériences et réalisations, vous pouvez consulter mon CV :</p>
-        <a href="IcholaBriceAkiossiResume.pdf" class="btn btn-primary" download>
-            <i class="fa fa-download"></i> Télécharger mon CV
-        </a>
-    </div>
-     </section>
-
-        <section id="projects" class="projects-section">
-            <h2>Mes Projets</h2>
-            <div class="projects-grid">
-                <!-- Cartes de projet -->
-                <div class="project-card">
-                    <img src="e-commerce.JPG" alt="Aperçu du projet 1">
-                    <h3>Boutique en ligne (e-commerce)</h3>
-                    <p>Le projet de développement complet d’un site e-commerce utilisant Symfony représente une étape significative dans la création d’une plateforme de vente en ligne performante et conviviale. Ce site, conçu avec soin, intègre plusieurs fonctionnalités clés qui répondent aux besoins des utilisateurs et des administrateurs.
-
-                    Tout d'abord, la gestion des produits est au cœur de la plateforme. Elle permettra aux administrateurs de gérer facilement l'inventaire, d'ajouter de nouveaux produits, de modifier les descriptions et les prix, ainsi que de supprimer des articles obsolètes. Cette fonctionnalité inclut également la possibilité d’organiser les produits par catégories, facilitant ainsi la navigation pour les clients. 
-
-                    Ensuite, le panier interactif est une autre fonctionnalité essentielle qui améliore l'expérience utilisateur. Les clients pourront ajouter des articles à leur panier, modifier les quantités, ou retirer des produits en temps réel, ce qui rendra le processus d'achat plus dynamique et intuitif. 
-
-                    Enfin, la sécurité des transactions est primordiale, c'est pourquoi une passerelle de paiement sécurisée est intégrée. Cela garantie que les informations personnelles et financières des clients sont protégées, ce qui est crucial pour établir la confiance dans un environnement d'achat en ligne. De plus, l'interface utilisateur moderne est conçue pour être esthétique et facile à utiliser, offrant une navigation fluide et agréable.</p>
-                </div>
-                <!-- Plus de cartes -->
+       
+        <!--toggle-theme-->
+        <div class="pos">
+            <div class="mode">
+                <span id="theme-btn" class="material-icons-sharp"data-translate=light_mode >light_mode</span>
             </div>
-            
-        </section>
-        
-        <section id="contact" class="contact-section">
-            <h2>Contactez-moi</h2>
-            <p>N'hésitez pas à me contacter pour discuter de vos projets ou collaborations.</p>
-            <a href="mailto:aichola22@gmail.com" class="btn btn-outline-primary mb-1">Me Contacter</a> <br>
-            <a href="tel:+2290190229064" class="btn btn-outline-primary mb-1">Appeler</a><br>
-            <a href="https://wa.me/22948454505" class="btn btn-outline-primary target="_blank">Me Contacter sur WhatsApp</a><br>
-        </section>
-    </main>
-    <footer class="footer">
-        <p>© 2025 Ichola Brice AKIOSSI. Tous droits réservés.</p>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+            <div id="menu-icon" class="bx bx-menu"></div>
+        </div>
+      
+    </header>
+      <!--home Section-->
+    
+      <section id="home" class="home" >
+        <div class="home-content scroll-scall">
+            <h1>Salut! je Ichola Brice AKIOSSI</h1>
+            <div class="change-text">
+                <h3>je suis un </h3>
+                <h3>
+                <span class="word">développeur &nbsp web</span>
+                <span class="word">créateur &nbsp d'experiences &nbsp numériques</span>
+                <span class="word">spécialiste &nbsp  de &nbsp le &nbsp langue &nbsp Anglaise</span>
+            </h3>
+            </div>
+            <p>Du design raffiné du front-end à la puissance invisible du back-end, je façonne des expériences numériques mémorables, performantes et taillées pour l’excellence.</p>
+            <div class="info-box">
+                <div class="email-info">
+                    <h5>Email :</h5>
+                    <a href="mailto:iakiossi@icloud.com?subject=Demande%20d'information"><span>iakiossi@icloud.com</span></a>
+                </div> 
+                <div class="Tel-info">
+                    <h5>Tel :</h5>
+                    <a href="tel:+2290148454505"><span>+229 0148454505</span></a>
+                </div>
+            </div>
+            <div class="btn-box">
+               <a href="IcholaBriceAkiossiResume.pdf" class="btn" download> <span> Télecharger Cv</span></a>
+                <a href="#contact" class="btn "><span>Contacter moi</span></a>
+            </div>
+            <div class="social-icon">
+                <a href="https://www.facebook.com/Nice%20Kidø" target="_blank">
+                  <i class="bx bxl-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/nicekido90_" target="_blank"><i class="bx bxl-instagram"></i></a>
+                <!--<a href="https://www.twitter.com/Eben Emrys" target="_blank"><i class="bx bxl-twitter"></i></a>-->
+            </div>
+        </div>
+        <div class="home-image scroll-scall">
+            <div class="img-box">
+                <img src="realme.png" alt="">
+            </div>
+        </div>
+     </section>
+           <!--About Section-->
+     <section id="about" class="about">
+        <div class="img-about scroll-scall">
+            <img src="realme.png" alt="">
+            <div class="info-about1">
+                <span>+3</span>
+                <p>ans d'experience</p>
+            </div>
+            <div class="info-about2">
+                <span>+124</span>
+                <p>projet complet</p>
+            </div>
+            <div class="info-about3">
+                <span>+163</span>
+                <p>clients satisfait</p>
+            </div>
+        </div>
+        <div class="about-content scroll-scall">
+            <h2>A propos de moi</h2>
+            <p onclick="toggleText()">Animé par une passion profonde pour le développement web et les technologies modernes, je suis un développeur polyvalent spécialisé en Laravel, Symfony et JavaScript, conjuguant expérience utilisateur engageante, et architecture backend robuste.
+                 Mon parcours m’a permis de bâtir des solutions performantes et élégantes, tout en gardant une veille constante sur les tendances du secteur.<span class="hidden-content">
+                  Par ailleurs, ma maîtrise avancée de la langue anglaise, tant sur le plan technique que communicationnel, me permet de naviguer efficacement dans des environnements internationaux et de collaborer avec agilité au sein d’équipes multiculturelles.
+                  Je ne me contente pas de coder : je conçois des expériences numériques innovantes et percutantes, avec l’exigence constante de repousser les limites de la qualité, de la performance… et de la créativité.
+                </span> 
+            </p>
+            <div class="btn-box">
+                <a  class="btn" onclick="toggleReadMore()">Lire plus</a>
+            </div>
+        </div>
+     </section>
+            <!--Service Section-->
+            <section id="services" class="service">
+                <div class="main-text scroll-scall">
+                    <h2>Mes services</h2>
+                </div>
+                <div class="section-service scroll-Bottom">
+                    
+                    
+                    <div class="service-box " >
+                        <i class="bx bx-code-alt service-icon" ></i>
+                        <h3>Développement web</h3>
+                           <p onclick="toggleTex()">À travers mon portfolio, je dévoile mes compétences solides en tant que 
+                              développeur web spécialisé en Laravel, Symfony, JavaScript et ses bibliothèques modernes, offrant une vision complète 
+                              du cycle de développement. Ma passion pour l'innovation se reflète dans la conception
+                              <span class="hidden-conte">
+                              de sites et d'applications web dynamiques, où l’ergonomie de l’interface se conjugue avec la robustesse du back-end.
+                              En tant que développeur full-stack, j’orchestre des solutions web performantes et élégantes, alliant efficacité, sécurité,
+                              et scalabilité. Mon engagement envers l'excellence transparaît dans chaque ligne de code, garantissant une expérience
+                              utilisateur fluide et des fonctionnalités puissantes côté serveur.
+                              </span>
+                            </p>
 
+                        <div class="btn-box service-btn" id="dev">
+                            <a  class="btn" onclick="toggleReadMo()">Lire plus</a>
+                        </div>
+                    </div>
+                    <div class="service-box">
+                        <i class="bx bxl-android service-icon"></i>
+                        <h3>Spécialiste de l’anglais pour le web et la tech</h3>
+                          <p onclick="toggleTe()">Au sein de mon portfolio, je mets en lumière mon expertise en langue anglaise appliquée au domaine du numérique, 
+                             valorisant des projets qui traduisent ma passion pour la communication claire et impactante. En tant que 
+                             spécialiste de la langue anglaise,
+                             <span class="hidden-cont">
+                              je m’attache à produire des contenus linguistiques précis, techniques et engageants, essentiels à l’expérience utilisateur 
+                              et à la portée internationale des solutions web. Ma maîtrise approfondie de l’anglais me permet d’accompagner efficacement 
+                              les projets dans leur dimension globale, en garantissant clarté, cohérence et adaptabilité face aux exigences d’un marché en constante évolution.
+                             </span>
+                         </p>
+
+                        <div class="btn-box service-btn" id="mobile">
+                            <a  class="btn" onclick="toggleReadM()">Lire plus</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+               <!--skill section-->
+               <section id="skill" class="skill">
+                <div class="main-text scroll-scall">
+                    <h2>Mes Compétences</h2>
+                    <div class="skill-main ">
+                        <div class="skill-left scroll-scall">
+                            <h3>Compétence &nbsp;Techniques</h3>
+                            <div class="skill-bar">
+                                <div class="info">
+                                    <p>JavaScript (ES6+)</p>
+                                    <p>75%</p>
+                                </div>
+                                <div class="bar">
+                                    <span class="figma"></span>
+                                </div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="info">
+                                    <p>HTML</p>
+                                    <p>80%</p>
+                                </div>
+                                <div class="bar">
+                                    <span class="html"></span>
+                                </div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="info">
+                                    <p>CSS</p>
+                                    <p>70%</p>
+                                </div>
+                                <div class="bar">
+                                    <span class="css"></span>
+                                </div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="info">
+                                    <p>JAVASCRIPT (ES6+)</p>
+                                    <p>70%</p>
+                                </div>
+                                <div class="bar">
+                                    <span class="js"></span>
+                                </div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="info">
+                                    <p>LARAVEL</p>
+                                    <p>72%</p>
+                                </div>
+                                <div class="bar">
+                                    <span class="tailwind"></span>
+                                </div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="info">
+                                    <p>SYMFONY</p>
+                                    <p>62%</p>
+                                </div>
+                                <div class="bar">
+                                    <span class="typescript"></span>
+                                </div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="info">
+                                    <p>PHP</p>
+                                    <p>82%</p>
+                                </div>
+                                <div class="bar">
+                                    <span class="react"></span>
+                                </div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="info">
+                                    <p>JQUERY</p>
+                                    <p>72%</p>
+                                </div>
+                                <div class="bar">
+                                    <span class="next"></span>
+                                </div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="info">
+                                    <p>BOOTSTRAP</p>
+                                    <p>75%</p>
+                                </div>
+                                <div class="bar">
+                                    <span class="node"></span>
+                                </div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="info">
+                                    <p>GIT/GITHUB</p>
+                                    <p>73%</p>
+                                </div>
+                                <div class="bar">
+                                    <span class="react_native"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-right scroll-scall">
+                            <h3>Compétences &nbsp; Profectionnelles</h3>
+                            <div class="profectionnel">
+                                <div class="box">
+                                    <div class="circle" data-dots="80" data-percent="80"></div>
+                                    <div class="text">
+                                        <big>80%</big>
+                                        <small>Travail d'equipe</small>
+                                    </div>
+                                </div>
+                                <div class="box">
+                                    <div class="circle" data-dots="80" data-percent="85"></div>
+                                    <div class="text">
+                                        <big>85%</big>
+                                        <small>programmation</small>
+                                    </div>
+                                </div>
+                                <div class="box">
+                                    <div class="circle" data-dots="80" data-percent="70"></div>
+                                    <div class="text">
+                                        <big>74%</big>
+                                        <small>Communication</small>
+                                    </div>
+                                </div>
+                                <div class="box">
+                                    <div class="circle" data-dots="80" data-percent="95"></div>
+                                    <div class="text">
+                                        <big>95%</big>
+                                        <small>Gestion des projets</small>
+                                    </div>
+                                </div>
+                                <div class="box">
+                                    <div class="circle" data-dots="80" data-percent="55"></div>
+                                    <div class="text">
+                                        <big>55%</big>
+                                        <small>Inteligence artificielle</small>
+                                    </div>
+                                </div>
+                                <div class="box">
+                                    <div class="circle" data-dots="80" data-percent="75"></div>
+                                    <div class="text">
+                                        <big>80%</big>
+                                        <small>Bases de données</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               </section>
+                      <!--portfolio section-->
+                <section id="portfolio" class="portfolio">
+                    <div class="main-text scroll-scall">
+                        <h2>Projects recents</h2>
+                    </div>
+                    <div class="container ">
+                        <div class="fillter-button">
+                           <!-- <button class="btn active"data-filter="all">Tout</button>-->
+                            <button class="btn" data-filter=".website">Site Web</button>
+                            <button class="btn" data-filter=".web_application">Application Web</button>
+                            <!--<button class="btn" data-filter=".mobile_application">Application mobile</button>-->
+                        </div>
+                        <div class="portfolio-gallery scrool-scall">
+                            <div class="port-box mix website">
+                                <div class="port-image">
+                                    <img src="img6.jpg" alt="">
+                                </div>
+                                <div class="port-content">
+                                    <h3>Site Web</h3>
+                                    <p>Decouvrez l'essence de mon savoir faire en un clic!Plongez dans l'univers captivant de mon avant dernier site web,ou le disign raffiné rencontre une experience utilisateur exceptionnelle</p>
+                                    <a href="#" target="_blank"><i class="bx bx-link-external"></i></a>
+                                </div>
+                            </div>
+                            <!--
+                            <div class="port-box mix mobile_application">
+                                <div class="port-image">
+                                    <img src="Images/img1.png" alt="">
+                                </div>
+                                
+                                <div class="port-content">
+                                    <h3>Application Mobile</h3>
+                                    <p>Decouvrez l'essence de mon savoir faire en un clic!Plongez dans l'univers captivant de mon  dernier application mobile,ou le disign raffiné rencontre une experience utilisateur exceptionnelle</p>
+                                    <a href="#" target="_blank"><i class="bx bx-link-external"></i></a>
+                                </div>
+                            </div>
+                            <div class="port-box mix web_application">
+                                <div class="port-image">
+                                    <img src="Images/apli_web1.png" alt="">
+                                </div>
+                                <div class="port-content">
+                                    <h3>Application Web</h3>
+                                    <p>
+                                        Découvrez mon application de chat révolutionnaire pour la réservation instantanée de chambres d'hôtel. Une expérience utilisateur fluide qui simplifie vos séjours en mettant l'accent sur la simplicité et l'efficacité.</p>
+                                    <a href="#" target="_blank"><i class="bx bx-link-external"></i></a>
+                                </div>
+                            </div>
+                            -->
+                            <div class="port-box mix web_application">
+                                <div class="port-image">
+                                    <img src="img4.jpg" alt="">
+                                </div>
+                                
+                                <div class="port-content">
+                                    <h3>Application Web</h3>
+                                    <p>Decouvrez l'essence de mon savoir faire en un clic!Plongez dans l'univers captivant de mon  dernier application web,ou le disign raffiné rencontre une experience utilisateur exceptionnelle</p>
+                                    <a href="#" target="_blank"><i class="bx bx-link-external"></i></a>
+                                </div>
+                            </div>
+                           <!-- <div class="port-box mix website">
+                                <div class="port-image">
+                                    <img src="Images/2.png" alt="" >
+                                </div>
+                                <div class="port-content">
+                                    <h3>Site Web</h3>
+                                    <p>Explorez la quintessence de l'élégance sur notre nouveau site web dédié à l'agence de beauté Beauty+, découvrez nos services exceptionnels, et laissez-vous inspirer par la sophistication et le professionnalisme qui définissent notre agence.</p>
+                                    <a href="#" target="_blank"><i class="bx bx-link-external"></i></a>
+                                </div>
+                            </div>
+                            <div class="port-box mix mobile_application">
+                                <div class="port-image">
+                                    <img src="Images/img2.jpeg" alt="" style="width: 450px;">
+                                </div>
+                                <div class="port-content">
+                                    <h3>Application Mobile</h3>
+                                    <p>Decouvrez l'essence de mon savoir faire en un clic!Plongez dans l'univers captivant de mon avant dernier application mobile,ou le disign raffiné rencontre une experience utilisateur exceptionnelle</p>
+                                    <a href="#" target="_blank"><i class="bx bx-link-external"></i></a>
+                                </div>
+                            </div>-->
+                            <!--<div class="port-box mix web_application">
+                                <div class="port-image">
+                                    <img src="mages/img4.jpg" alt="">
+                                </div>
+                                <div class="port-content">
+                                    <h3>Application Web</h3>
+                                    <p>Decouvrez l'essence de mon savoir faire en un clic!Plongez dans l'univers captivant de mon  dernier application web,ou le disign raffiné rencontre une experience utilisateur exceptionnelle</p>
+                                    <a href="#" target="_blank"><i class="bx bx-link-external"></i></a>
+                                </div>
+                            </div>-->
+                            <div class="port-box mix website">
+                                <div class="port-image">
+                                    <img src="img6.jpg" alt="" >
+                                </div>
+                                <div class="port-content">
+                                    <h3>Site Web</h3>
+                                    <p>Explorez l'excellence de mon expertise en un clic. Plongez dans l'univers de mon dernier site web, où design élégant et performance utilisateur ne font qu'un.</p>
+                                    <a href="#" target="_blank"><i class="bx bx-link-external"></i></a>
+                                </div>
+                            </div>
+                           <!-- <div class="port-box mix mobile_application">
+                                <div class="port-image">
+                                    <img src="/Images/img2.jpeg" alt="" style="width: 450px;">
+                                </div>
+                                <div class="port-content">
+                                    <h3>Application Mobile</h3>
+                                    <p>Decouvrez l'essence de mon savoir faire en un clic!Plongez dans l'univers captivant de mon avant dernier application mobile,ou le disign raffiné rencontre une experience utilisateur exceptionnelle</p>
+                                    <a href="#" target="_blank"><i class="bx bx-link-external"></i></a>
+                                </div>
+                            </div>-->
+                          
+                        </div>
+                    </div>
+                </section>
+                 <!--contact section-->
+                <section id="contact" class="contact">
+                    <div class="main-text scroll-scall">
+                        <h2>Contacter moi</h2>
+                    </div>
+                       <form id="monFormulaire" class="scroll-scall">
+                         <div class="messageconfirm"></div>
+                       
+                         <input type="text" name="nom" placeholder="Votre nom" required>
+                         <input type="email" name="email" placeholder="Votre Email" required>
+                         <input type="tel" name="tetephone" placeholder="Numéro Téléphonique" required>
+                         <textarea name="message" cols="30" rows="10" placeholder="Votre message" required></textarea>
+                       
+                         <div class="btn-box formBtn">
+                           <button type="submit" class="btn scroll-scall" onclick="envoyerFormulaire()">Envoyez</button>
+                         </div>
+                       </form>
+
+                   </section> 
+                    <!--website footer-->
+                    <footer>
+                        <p class="scroll-scall">&copy; <span id="year" style="margin-right:2px;"> </span>   ICHTECH || Tous droits réservés </p>
+                        
+                    </footer>
+                        <a href="#home" class="scroll__up" id="scrollup"><i class="ri-arrow-up-line"></i></a>
+
+                             <div class="discussion">
+                        <a href="https://wa.me/22953848253" target="_blank" class="scroll__wat">
+                            <i class="bx bxl-whatsapp"></i>
+                            <span id="scrollwat" class="scroll">Démarrer une discussion</span>
+                        </a>
+                    </div>
+    <script src="mixitup.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
